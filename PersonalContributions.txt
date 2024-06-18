@@ -1,0 +1,28 @@
+A large part of my contribution to the project was as a technical supervisor. I managed pushes to the github, 
+handled several merge conflicts, and bug fixed and refined several other people's contributions, as well as
+restructuring them to work together for the game.
+
+I also was the primary person in charge of managing our primary Scene. I set up positioning, tested spawn locations,
+handled setup for the killbox, and helped manage object layers.
+
+My primary coding contribution was the Entity Spawn Manager. This class handles all spawning objects from coins to
+hazards by connecting Generators to each objects respective Manager, then all together to the Entity Spawn Manager.
+	- Generators are objects containing the base spawning and behavior functionality of each entity spawned
+	  into the game. These were mostly created by other programmers, only modified by me to fit the system or
+	  to fix errors.
+
+	- Each Generator has a corresponding Manager. The Manager's job is to standardize the spawning methods,
+	  and to provide a quicker way to find relevant Serialized parameters for spawning purposes. Each Manager
+	  is then provided to the Entity Spawn Manager. This separation also acts a security layer, allowing the base
+	  generator to be edited or changed freely without necessarily affecting the Managers.
+
+	- The Entity Spawn Manager has delays for each relevant object to allow for easy changes to the spawn timing
+	  for each entity. It runs several simultaneous timers and instatiates each entity at the relevant time, also
+	  handling randomness within the spawns for variety.
+
+Another personal contribution, similar to above, was the code for handling the background scrolling. I set up the
+system responsible for cycling the background to destroy and replace it as it passes the kill box.
+
+Finally, I finished and connected the Scientist system to have them spawn in and animate properly when responding to
+the player flying. I also made them spawn in packs of a random number, with random distance between them, to make it
+add to the realistic feel of finding groups of people.
