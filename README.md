@@ -26,8 +26,8 @@ A large part of my contribution to the project was as a technical supervisor. I 
 
 I also was the primary person in charge of managing our primary Scene. I set up positioning, tested spawn locations, handled setup for the killbox and the killbox's functionality of cycling the background, and helped manage object layers.
 
-![EntitySpawning](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/d5171942-596c-42de-9416-6a8ace211eac)
 In this video you can see the general layout of the scene view, examples of object spawning behavior, and the background cycling as it passes the killbox on the left side of the screen.
+![EntitySpawning](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/d5171942-596c-42de-9416-6a8ace211eac)
 
 ### Creating the Entity Spawn Manager Responsible for Handling all Objects Spawning in the Scene
 
@@ -40,12 +40,18 @@ Generators are objects containing the base spawning and behavior functionality o
 
 Each Generator has a corresponding Manager. The Manager's job is to standardize the spawning methods, and to provide a quicker way to find relevant Serialized parameters for spawning purposes. Each Manager is then provided to the Entity Spawn Manager. This separation also acts as a security layer, allowing the base generator to be edited or changed freely without necessarily affecting the Managers.
 
-![ZapperManager](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/6c6010c3-c097-4fe4-aaad-0c1e0b7fe06a)
 An example of code from one of the managers, the Zapper Manager, my coding style tends to favor easily readable code.
+![ZapperManager](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/6c6010c3-c097-4fe4-aaad-0c1e0b7fe06a)
 
 The Entity Spawn Manager has delays for each relevant object to allow for easy changes to the spawn timing for each entity. It runs several simultaneous timers and instantiates each entity at the relevant time, also handling randomness within the spawns for variety.
 
 ![EntitySpawnManagerGraph](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/7af233b1-4ab5-4cca-809b-8e6cc1c647ac)
+
+Here we can see a flowchart representing the Entity Spawn Manager. 
+- Certain spawnable objects are in a pool with other obstacles to avoid certain situations, such as coins being uncollectable from being covered by a zapper, or a laser locking you in place only for an unavoidable rocket to hit you.
+- Every frame the Entity Spawn Manager iterates the timers for each entity pairing.
+- When a timer reaches 0, a random entity from the pair is spawned, and the timer is set to that specific entities spawn delay.
+- Entities in pairs have distinct spawn delays to prevent unwanted overlaps, such as lasers having a long delay to give time for the animation to finish before the system can spawn another rocket.
 
 ### Finalizing Spawn and Movement Behaviors for the NPC Scientists
 
