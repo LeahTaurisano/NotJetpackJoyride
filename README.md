@@ -52,6 +52,7 @@ Here we can see a flowchart representing the Entity Spawn Manager.
 - Every frame the Entity Spawn Manager iterates the timers for each entity pairing.
 - When a timer reaches 0, a random entity from the pair is spawned, and the timer is set to that specific entities spawn delay.
 - Entities in pairs have distinct spawn delays to prevent unwanted overlaps, such as lasers having a long delay to give time for the animation to finish before the system can spawn another rocket.
+- The individual delays are all easily adjusted through serialized fields to allow for quick on the fly adjustments to suit gameplay flow.
 
 ### Finalizing Spawn and Movement Behaviors for the NPC Scientists
 
