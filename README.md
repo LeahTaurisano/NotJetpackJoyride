@@ -26,8 +26,20 @@ A large part of my contribution to the project was as a technical supervisor. I 
 
 I also was the primary person in charge of managing our primary Scene. I set up positioning, tested spawn locations, handled setup for the killbox and the killbox's functionality of cycling the background, and helped manage object layers.
 
-In this video you can see the general layout of the scene view, examples of object spawning behavior, and the background cycling as it passes the killbox on the left side of the screen.
-![EntitySpawning](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/d5171942-596c-42de-9416-6a8ace211eac)
+<div alighn="center">
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/d5171942-596c-42de-9416-6a8ace211eac" alt="icon" width="100%";>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <span>In this video you can see the general layout of the scene view, examples of object spawning behavior, and the background cycling as it passes the killbox on the left side of the screen.</span>
+    </td>
+  </tr>
+</table>
+</div>
 
 ### Creating the Entity Spawn Manager Responsible for Handling all Objects Spawning in the Scene
 
@@ -40,8 +52,20 @@ Generators are objects containing the base spawning and behavior functionality o
 
 Each Generator has a corresponding Manager. The Manager's job is to standardize the spawning methods, and to provide a quicker way to find relevant Serialized parameters for spawning purposes. Each Manager is then provided to the Entity Spawn Manager. This separation also acts as a security layer, allowing the base generator to be edited or changed freely without necessarily affecting the Managers.
 
-An example of code from one of the managers, the Zapper Manager, my coding style tends to favor easily readable code.
-![ZapperManager](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/6c6010c3-c097-4fe4-aaad-0c1e0b7fe06a)
+<div align="center">
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/6c6010c3-c097-4fe4-aaad-0c1e0b7fe06a" alt="icon" width="100%";">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <span>An example of code from one of the managers, the Zapper Manager, my coding style tends to favor easily readable code.</span>
+    </td>
+  </tr>
+</table>
+</div>
 
 The Entity Spawn Manager has delays for each relevant object to allow for easy changes to the spawn timing for each entity. It runs several simultaneous timers and instantiates each entity at the relevant time, also handling randomness within the spawns for variety.
 
