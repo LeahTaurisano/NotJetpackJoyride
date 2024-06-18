@@ -30,7 +30,7 @@ I also was the primary person in charge of managing our primary Scene. I set up 
 <table>
   <tr>
     <td>
-      <img src="https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/d5171942-596c-42de-9416-6a8ace211eac" alt="icon" width="100%";>
+      <img src="https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/5f911c7f-7b21-463a-be2e-440e911f2449" alt="icon" width="100%";>
     </td>
   </tr>
   <tr>
