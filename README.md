@@ -3,6 +3,11 @@
 
 ### Leah Taurisano, Technical Lead
 
+### Clone Link
+```
+git clone https://github.com/LeahTaurisano/NotJetpackJoyride.git
+```
+
 ### Build Instructions
 - Open the project in Unity version 2022.3.23f1
 - Navigate to the File header, and select Build Settings.
@@ -40,7 +45,7 @@ An example of code from one of the managers, the Zapper Manager, my coding style
 
 The Entity Spawn Manager has delays for each relevant object to allow for easy changes to the spawn timing for each entity. It runs several simultaneous timers and instantiates each entity at the relevant time, also handling randomness within the spawns for variety.
 
-![ESMCode](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/5e5aba7e-49f4-43da-bc87-d9223cee646b)
+![EntitySpawnManagerGraph](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/7af233b1-4ab5-4cca-809b-8e6cc1c647ac)
 
 ### Finalizing Spawn and Movement Behaviors for the NPC Scientists
 
@@ -54,3 +59,16 @@ I also made them spawn in packs of a random number, with random distance between
 Additionally, as the programmer responsible for connecting the several systems, I created the system to allow the player to collect coins on touching them, and also connected the particle effect to this action.
 
 ![CoinCollecting](https://github.com/LeahTaurisano/NotJetpackJoyride/assets/138742041/e7db3984-0f1f-4274-8950-c9782e9637db)
+
+## Other Contributors
+![image](https://github.com/NicholasOkovic/NotJetpackJoyride/assets/139954443/c822852d-919a-49d6-b377-ee0781258936) https://github.com/SleepingDragon0
+
+![image](https://github.com/NicholasOkovic/NotJetpackJoyride/assets/139954443/f2c4675a-b38a-4551-8ac2-e0234ec5df36) https://github.com/NicholasOkovic
+
+![image](https://github.com/NicholasOkovic/NotJetpackJoyride/assets/139954443/0ac794c1-d76e-4cc7-be9f-8a6e3dc693dc) https://github.com/twdaviss
+
+![image](https://github.com/NicholasOkovic/NotJetpackJoyride/assets/139954443/7c19a2af-05cf-49fa-9c1e-d1d088b4a17c) https://github.com/CultyMarble
+
+![image](https://github.com/NicholasOkovic/NotJetpackJoyride/assets/139954443/859b874c-3a0c-44f5-9062-506bad1ea22e) https://github.com/PhiBeo
+
+![image](https://github.com/NicholasOkovic/NotJetpackJoyride/assets/139954443/3ddd6336-0f50-485b-8698-ac1541474f4a) https://github.com/MiguelAyala25
